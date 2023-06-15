@@ -28,6 +28,12 @@ If `stressio` cannot be found as a command-line tool, make sure that `$HOME/.loc
 
 > Want to know more about how the binary is installed?  Of course you do!  The Python tooling is called `console_scripts`, and you can find a brief introduction and example on [the world's most dangerous website].
 
+## Linting
+
+Used the [`pycodestyle`] module via my [`pre-commit` git hook].
+
+For more information on how I run multiple `pre-commit` git hooks, see my [`On a Git Hook Pattern`] article where I go into some depth.
+
 ## References
 
 - [The Python Standard Library](https://docs.python.org/3/library/)
@@ -39,4 +45,7 @@ If `stressio` cannot be found as a command-line tool, make sure that `$HOME/.loc
 [`dd`]: https://www.man7.org/linux/man-pages/man1/dd.1.html
 [`/proc/stats`]: https://docs.kernel.org/filesystems/proc.html#miscellaneous-kernel-statistics-in-proc-stat
 [the world's most dangerous website]: https://benjamintoll.com/2021/04/04/on-python-entry_points/#console_scripts
+[`pycodestyle`]: https://pypi.org/project/pycodestyle/
+[`pre-commit` git hook]: https://github.com/btoll/dotfiles/blob/master/git-hub/hooks/pre-commit.d/pycodestyle.sh
+[`On a Git Hook Pattern`]: https://benjamintoll.com/2021/03/30/on-a-git-hook-pattern/
 

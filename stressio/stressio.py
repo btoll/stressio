@@ -33,8 +33,8 @@ def flush(device_name):
 def get_aggregate_cpu_stats():
     try:
         with open("/proc/stat", "r") as f:
-            # Will read the following line, which is an aggregate of all the CPUs on
-            # the system since the system first booted:
+            # Will read the following line, which is an aggregate of all the
+            # CPUs on the system since the system first booted:
             #
             #       cpu  10263763 81754 4812820 32308895 90050 0 35175 0 0 0
             #
@@ -43,7 +43,8 @@ def get_aggregate_cpu_stats():
             #   2. nice: niced processes executing in user mode
             #   3. system: processes executing in kernel mode
             #   4. idle: twiddling thumbs
-            #   5. iowait: In a word, iowait stands for waiting for I/O to complete
+            #   5. iowait: In a word, iowait stands for waiting for I/O to
+            #      complete
             #   6. irq: servicing interrupts
             #   7. softirq: servicing softirqs
             #   8. steal: involuntary wait
